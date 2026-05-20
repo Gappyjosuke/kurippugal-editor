@@ -1,0 +1,26 @@
+:root {
+  /* LIGHT MODE (DEFAULT) */
+  --bg-color: #d7d3b0;
+  --bg-gradient: linear-gradient(to bottom, #d7d3b0, #c7c2a2);
+  --paper-color: rgba(233,225,189,0.72);
+  --text-main: #3d392f;
+  --text-muted: #757057;
+  --border-color: rgba(80,70,55,0.12);
+  --highlight-bg: rgba(142,132,104,0.28);
+}
+
+[data-theme="DARK"] {
+  /* DARK MODE (BLACK & WHITE NIE-R STYLE) */
+  --bg-color: #111111;
+  --bg-gradient: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
+  --paper-color: rgba(30, 30, 30, 0.85);
+  --text-main: #e0e0e0;
+  --text-muted: #888888;
+  --border-color: rgba(200,200,200,0.15);
+  --highlight-bg: rgba(200,200,200,0.2);
+}
+
+/* Make everything transition smoothly */
+* {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
