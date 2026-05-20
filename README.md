@@ -11,8 +11,8 @@ Kurippugal is a beautiful, immersive, and highly configurable personal workspace
 
 Everything from saving files to changing the UI colors and wiping the memory is handled right here:
 
-![System Menu Navigation](/assets/Pre-Alpha-Demo.gif)
-*(Drop a quick GIF here showing you opening the menu and scrolling through the options!)*
+![System Menu Navigation](/assets/Pre-Alpha-Demo.mp4)
+
 
 ##  Installation
 1. Go to the [Releases](https://github.com/Gappyjosuke/kurippugal-editor/releases).
