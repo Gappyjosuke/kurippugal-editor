@@ -1,6 +1,6 @@
 # Kurippugal
 
-Kurippugal is a beautiful, immersive, and highly configurable personal workspace and editor. It is heavily inspired by the UI design of *NieR: Automata*.
+A beautiful, immersive, and highly configurable personal workspace and editor. It is heavily inspired by the UI design of *NieR: Automata*.
 
 ![Kurippugal Interface](/assets/demo.png)
 
@@ -11,7 +11,9 @@ Kurippugal is a beautiful, immersive, and highly configurable personal workspace
 
 Everything from saving files to changing the UI colors and wiping the memory is handled right here:
 
-![System Menu Navigation](/assets/Pre-Alpha-Demo.mp4)
+
+https://github.com/user-attachments/assets/686c7bbf-14fd-4fa4-b782-6c40032c1532
+
 
 
 ##  Installation
