@@ -1,0 +1,34 @@
+name: "Feature Request"
+description: Propose a new mechanic or aesthetic idea for Kurippugal
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Have an idea to make the environment more atmospheric or functional?
+        Describe your concept below. We love adding immersive features inspired by retro terminals and tactical interfaces.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear description of what is lacking or frustrating in the current workspace.
+      placeholder: e.g., "The current UI setup gets repetitive when writing for long periods..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution / Mechanic
+      description: Describe exactly how you envision this feature working inside Kurippugal.
+      placeholder: Describe the new UI elements, keyboard shortcuts, or theme styles...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative designs or workarounds you've thought about.

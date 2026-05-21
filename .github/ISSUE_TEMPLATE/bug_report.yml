@@ -1,0 +1,66 @@
+name: "Bug Report"
+description: File a structured report to help patch Kurippugal
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thank you for helping improve Kurippugal!
+        Before submitting, please make sure you are running the latest version of the app and check if a similar issue has already been reported.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Pre-flight Checklist
+      description: Please verify these core requirements before proceeding.
+      options:
+        - label: I have searched open and closed issues to ensure this isn't a duplicate.
+          required: true
+        - label: I am using the latest released version of Kurippugal.
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the error is.
+      placeholder: Tell us what went wrong...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Explain exactly how you triggered the error.
+      placeholder: |
+        Example:
+        1. Press 'Alt + X' to open the system menu.
+        2. Navigate to...
+        3. Press 'Space' to select...
+        4. See crash.
+    validations:
+      required: true
+
+  - type: textarea
+    id: visuals
+    attributes:
+      label: Visual Evidence (Screenshots or Video)
+      description: Drag and drop screenshots or video recordings (.mp4, .mov, .gif) directly into this box to show the bug in action.
+      placeholder: Drop your media files here...
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Developer Console Logs / Stack Traces
+      description: Press `Ctrl + Shift + I` inside the app to capture any red console failures.
+      placeholder: Paste console output here...
+      render: shell
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any active UI themes, custom configurations, or external triggers.
+      placeholder: e.g., "This only happens when the RED mode is active."
