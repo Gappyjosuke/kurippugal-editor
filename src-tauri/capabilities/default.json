@@ -9,8 +9,16 @@
     "core:default",
     "opener:default",
     "dialog:default",
-    "fs:default",
     "core:window:allow-set-decorations",
-    "core:window:allow-is-decorated"
+    "core:window:allow-is-decorated",
+    "fs:default",
+    {
+      "identifier": "fs:allow-read-text-file",
+      "allow": [{ "path": "**" }]
+    },
+    {
+      "identifier": "fs:allow-write-text-file",
+      "allow": [{ "path": "**" }]
+    }
   ]
 }

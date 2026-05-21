@@ -5,6 +5,7 @@ import { openMenu, closeMenu, setSubmenuIndex, pushMenu, popMenu, toggleUIState,
 import { get, writable } from "svelte/store";
 import { activateMode, clearAllModes, getModeTags } from "./modeEngine";
 import { editorContent } from "../editor/store"; 
+import { invoke } from '@tauri-apps/api/core';
 
 import { save, open } from '@tauri-apps/plugin-dialog';
 import { writeTextFile, readTextFile } from '@tauri-apps/plugin-fs';
@@ -119,10 +120,9 @@ export async function handleKeyDown(event: KeyboardEvent) {
           message: "The selected action will terminate Kurippugal.\nUnsaved data may be lost.\n\nDo you wish to exit the system?",
           onConfirm: async () => {
             try {
-              const { getCurrentWindow } = await import('@tauri-apps/api/window');
-              await getCurrentWindow().close();
+              await invoke('kill_system');
             } catch (err) {
-              window.close();
+              console.error("System termination failed:", err);
             }
           }
         });
