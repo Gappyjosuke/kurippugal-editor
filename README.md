@@ -12,8 +12,7 @@ A beautiful, immersive, and highly configurable personal workspace and editor. I
 Everything from saving files to changing the UI colors and wiping the memory is handled right here:
 
 
-https://github.com/user-attachments/assets/686c7bbf-14fd-4fa4-b782-6c40032c1532
-
+https://github.com/user-attachments/assets/e80bc633-ad63-435a-b1c7-c8eaf25626b4
 
 
 ##  Installation
